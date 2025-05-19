@@ -1,0 +1,268 @@
+body {
+    background-color: #eaf6fc; /* Fundo azul claro */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao início do container */
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid #d4f1f9;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px; /* Aumentado para comportar +1 campo */
+    margin-bottom: 20px; /* Adicionado margem para separar do message-container se necessário */
+}
+
+.form-container h2,
+.form-container h3 {
+    color: #1e6091;
+    text-shadow: none;
+}
+
+.form-container h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.form-container h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form-group.termos-condicoes {
+    display: flex;
+    align-items: center; /* Isso deve alinhar o checkbox e o label verticalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group.termos-condicoes input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+}
+
+.form-group.termos-condicoes label {
+    font-weight: normal;
+    color: #555;
+    cursor: pointer;
+}
+
+.form-group.termos-condicoes label a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.form-group.termos-condicoes label a:hover {
+    color: #0056b3;
+}
+
+/* Estilo para o container do input de senha e botão de visualização */
+.form-group > .password-input {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o input e o botão */
+    position: relative; /* Importante para posicionar o botão */
+}
+
+/* Ajuste no input de senha para dar espaço ao ícone */
+.form-group > .password-input input[type="password"] {
+    padding-right: 30px; /* Espaço para o ícone */
+    flex-grow: 1; /* Permite que o input cresça e ocupe o espaço */
+}
+
+/* Estilo para o botão de mostrar/ocultar senha */
+.form-group > .password-input .toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #aaa; /* Cor discreta */
+    font-size: 0.9em; /* Tamanho menor */
+    margin-left: 5px; /* Espaçamento à esquerda do input */
+    position: absolute; /* Posiciona o botão dentro do .password-input */
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+/* Estilo para o ícone dentro do botão (opcional, para garantir herança de tamanho) */
+.form-group > .password-input .toggle-password i {
+    font-size: inherit;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-left: 25px; /* Alinha com o texto do label */
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: #1c1c2e;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #a7d9ed;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+button {
+    background-color: #1e6091;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #15527a;
+    transform: scale(1.02);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Default two col, change to three on wider screens */
+.form-group {
+    flex: 1 1 48%;
+    min-width: 140px;
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        flex: 1 1 30%;
+    }
+}
+
+/* Garantir full width em grupos específicos se precisar */
+form > .form-group,
+form > .form-row.full {
+    flex: 1 1 100%;
+}
+
+.text-danger {
+    color: red !important;
+    font-size: 13px;
+    margin-top: 4px;
+    text-shadow: none;
+}
+
+.alert-danger {
+    margin-top: 8px !important;
+    color: red !important;
+    background-color: #ffebee;
+    border: 1px solid #ef9a9a;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Novo container de mensagem seguindo o novo padrão */
+.message-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+    margin-top: 20px; /* Adiciona espaço acima do container de mensagem */
+}
+
+.message-container h2 {
+    color: #e74c3c; /* Tom de aviso/erro */
+    margin-bottom: 20px;
+}
+
+.message-container .message {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.message-container .buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center; /* Centraliza os botões */
+}
+
+.message-container .buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-container .buttons .yes-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.message-container .buttons .yes-button:hover {
+    background-color: #2980b9;
+}
+
+.message-container .buttons .no-button {
+    background-color: #f39c12; /* Cor alternativa para o botão "Não" */
+    color: white;
+}
+
+.message-container .buttons .no-button:hover {
+    background-color: #e67e22;
+}
+
+.message-container .footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.message-container .footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.message-container .footer a:hover {
+    text-decoration: underline;
+}

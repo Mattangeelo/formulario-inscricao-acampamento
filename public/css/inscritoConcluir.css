@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6fc; /* Fundo azul claro da página inicial */
+    padding: 20px;
+    display: flex; /* Para centralizar o container na tela */
+    justify-content: center;
+    align-items: flex-start; /* Alinha o topo do container ao topo */
+    min-height: 100vh; /* Garante que o fundo cubra toda a tela */
+    margin: 0; /* Remove margens padrão do body */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Branco com leve transparência */
+    max-width: 600px; /* Aumentei um pouco a largura máxima */
+    margin: 30px auto; /* Adiciona margem superior e inferior e centraliza horizontalmente */
+    border-radius: 12px;
+    padding: 3rem; 
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    backdrop-filter: blur(8px); /* Adiciona um efeito de blur no fundo */
+    border: 1px solid #d4f1f9; /* Borda clara */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Aumentei um pouco a margem inferior */
+    color: #1e6091; /* Cor de destaque azul */
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #a7d9ed;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1e6091;
+    padding: 0 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dois campos por linha */
+    gap: 1.5rem; /* espaçamento entre os campos */
+    margin-bottom: 1.5rem;
+}
+
+.form-row .form-group {
+    margin-bottom: 0; /* remover margem extra já que o espaçamento vem do gap */
+}
+
+label {
+    display: block; /* Faz o label ocupar a largura total para melhor alinhamento */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1c1c2e; /* Cor do texto principal */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #a7d9ed; /* Borda clara para inputs e selects */
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo branco quase opaco */
+    color: #1c1c2e; /* Cor do texto principal dentro dos campos */
+    width: 100%; /* Garante que os campos ocupem a largura total do form-group */
+    box-sizing: border-box; /* Evita que o padding aumente a largura total */
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar a textarea verticalmente */
+}
+
+.text-danger {
+    color: #dc3545; /* Cor vermelha para mensagens de erro */
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.actions-row {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px;
+    justify-content: flex-end; /* Alinha os botões à direita */
+}
+
+.back-button,
+.confirm-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white;
+}
+
+.back-button {
+    background-color: #6c757d; /* Cor cinza para o botão Voltar */
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.02);
+}
+
+.confirm-button {
+    background-color: #28a745; /* Cor verde para o botão Confirmar */
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+/* Opcional: Layout em Grid para telas maiores */
+/* @media (min-width: 768px) {
+    .form-

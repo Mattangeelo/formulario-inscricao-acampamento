@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/imagens/mar.jfif'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .titulo {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  #macio {
+    position: absolute;
+  top: 70%;
+  left: 12%;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  z-index: 1;
+
+  
+  filter: grayscale(90%) brightness(70%) contrast(90%);
+  }
+  
+  #mensagem {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  #fechar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  

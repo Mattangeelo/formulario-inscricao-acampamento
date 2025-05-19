@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6fc; /* Fundo azul claro da página inicial */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8); /* Branco com leve transparência */
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px); /* Blur suave */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #d4f1f9; /* Borda clara */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #1e6091; /* Cor de destaque azul */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1c1c2e; /* Cor do texto principal */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #a7d9ed; /* Borda clara para inputs */
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco quase opaco */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #184e77; /* Cor de destaque no foco */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e6091; /* Cor de destaque azul para o botão */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas como na página inicial */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no botão */
+}
+
+button:hover {
+    background-color: #15527a; /* Tom mais escuro no hover */
+    transform: scale(1.02);
+}
+
+.footer {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #1c1c2e; /* Cor do texto principal para o footer */
+}
+
+.footer a {
+    color: #184e77; /* Cor de destaque para links no footer */
+    text-decoration: none;
+}
+
+.esqueci {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.esqueci a {
+    color: #184e77; /* Cor de destaque para o link "Esqueci a senha" */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.esqueci a:hover {
+    text-decoration: underline;
+}

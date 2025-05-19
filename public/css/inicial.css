@@ -1,0 +1,352 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eaf6fc;
+    color: #1c1c2e;
+}
+
+.top-bar {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 78, 119, 0.6); /* Um azul escuro com transparência */
+    backdrop-filter: blur(5px);
+    padding: 10px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+nav ul {
+    list-style: none;
+    display: flex; /* Esta linha é crucial para o layout horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff; /* Texto branco para contrastar com o fundo azul */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 10px 40px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #e0f7fa; /* Um azul bem claro ao passar o mouse */
+    text-shadow: 0 0 5px #e0f7fa;
+}
+/* Introdução */
+.intro {
+    margin-top: 73px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #d4f1f9;
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #123456;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #1e6091;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #15527a;
+}
+
+button.secundario {
+    background-color: white;
+    color: #1e6091;
+    border: 2px solid #1e6091;
+}
+
+button.secundario:hover {
+    background-color: #f0fbff;
+}
+
+/* Seção sobre o Mov */
+#sobreMov {
+    padding: 60px 30px;
+    background-color: #f5f5f5;
+}
+
+#sobreMov h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+#sobreMov p{
+    text-align: center;
+}
+
+#sobreMov .conteudo {
+    display: flex; /* Ativa o Flexbox para os filhos (img e div.texto) */
+    flex-direction: row; /* Coloca os filhos em linha (lado a lado) */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 20px auto; /* Centraliza a seção e adiciona margem vertical */
+    padding: 20px; /* Adiciona um preenchimento interno para um visual melhor */
+    background-color: #15527a; /* Adiciona um fundo branco para destacar a seção */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+#sobreMov .conteudo img {
+    width: 30%; /* Defina a largura desejada para a imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas na imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Adiciona uma leve sombra na imagem */
+}
+
+#sobreMov .conteudo .texto {
+    width: 70%;
+    text-align: left;
+    color:#ffffff;
+}
+.conteudo-personalizado{
+    display: flex; /* Ativa o Flexbox para os filhos (img e div.texto) */
+    flex-direction: row; /* Coloca os filhos em linha (lado a lado) */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 20px auto; /* Centraliza a seção e adiciona margem vertical */
+    padding: 20px; /* Adiciona um preenchimento interno para um visual melhor */
+    background-color: #ffffff; /* Adiciona um fundo branco para destacar a seção */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+
+.carrossel-conteudo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.carrossel-imagens {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    height: auto;
+}
+
+.carrossel-imagens div {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrossel-imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrossel-conteudo .texto {
+    width: 60%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.texto {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+#location-info {
+    background: linear-gradient(135deg, #184e77);
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    display: flex; /* Mantemos o display flex */
+    flex-direction: row; /* Alteramos a direção para linha */
+    justify-content: space-around; /* Espaçamento entre os itens */
+    align-items: center; /* Alinhamento vertical ao centro */
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px; /* Adicionei um gap entre o mapa e as informações */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#location-info h2 { /* Estilos para o título */
+    font-size: 2.5em; /* Tamanho da fonte maior */
+    margin-bottom: 20px; /* Espaço entre o título e o mapa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto para destaque */
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    color: #f39c12; /* Uma cor vibrante para o título */
+    width: 100%; /* Garante que o título ocupe a largura total acima dos dois blocos */
+    text-align: center; /* Centraliza o título */
+}
+
+#map-container {
+    width: 50%; /* Ajustei a largura para ocupar metade do container */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 400px; /* Mantive a altura do mapa */
+    border: none;
+    border-radius: 10px;
+}
+
+#contact-info {
+    width: 40%; /* Ajustei a largura para ocupar um pouco menos da metade, deixando espaço */
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco translúcido */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efeito de blur no fundo */
+    text-align: left; /* Alinhei o texto à esquerda para melhor leitura */
+}
+
+#contact-info h3 {
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Linha abaixo do título */
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+#contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.9; /* Ligeiramente transparente para dar um toque */
+}
+
+@media (max-width: 768px) {
+        .top-bar,
+        .carrossel-conteudo {
+            display: none !important;
+        }
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .top-bar h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #sobreMov .conteudo,
+    .conteudo-personalizado,
+    .carrossel-conteudo,
+    #location-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobreMov .conteudo img,
+    .carrossel-imagens,
+    #map-container,
+    #contact-info {
+        width: 100%;
+    }
+
+    #map-container iframe {
+        height: 300px; /* diminuir um pouco a altura no mobile */
+    }
+
+    .carrossel-conteudo .texto,
+    #sobreMov .conteudo .texto {
+        width: 100%;
+        text-align: center;
+    }
+    .carrossel-imagens img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #contact-info {
+        padding: 20px;
+    }
+
+    #location-info {
+        padding: 40px 20px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+}
+
+/* Media Query para telas ainda menores (ex: 320px a 480px) - Opcional */
+@media (max-width: 480px) {
+    .top-bar h1 {
+        font-size: 20px; /* Reduz ainda mais o título se necessário */
+    }
+
+    .intro h2 {
+        font-size: 28px; /* Reduz um pouco o título da introdução */
+    }
+
+    button {
+        padding: 10px 20px; /* Botões menores */
+        font-size: 16px;
+    }
+}

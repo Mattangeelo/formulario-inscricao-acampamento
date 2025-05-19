@@ -1,0 +1,162 @@
+body {
+    background-color: #eaf6fc;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%; /* Mantém a responsividade */
+    max-width: 650px; /* Aumenta um pouco mais a largura máxima do card */
+    border: 1px solid #d4f1f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1.2rem 1.5rem; /* Aumenta um pouco o padding do cabeçalho */
+}
+
+.card-title { /* Estilo para o título "Confirmar E-mail" */
+    color: #1e6091;
+    font-size: 1.7rem; /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center; /* Centraliza o título */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+.card-body input.form-control {
+    max-width: 100%; /* Garante que a largura máxima seja 100% do pai */
+    box-sizing: border-box; /* Garante que padding e border estejam dentro da largura */
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-size: 0.95rem; /* Aumenta um pouco o tamanho da fonte da label */
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem; /* Aumenta um pouco o padding do input */
+    font-size: 1rem; /* Aumenta um pouco o tamanho da fonte do input */
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1e6091;
+    border-color: #1e6091;
+    padding: 0.8rem 1.5rem; /* Aumenta um pouco o padding do botão */
+    font-size: 1.1rem; /* Aumenta um pouco o tamanho da fonte do botão */
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #15527a;
+    border-color: #15527a;
+}
+
+.alert {
+    padding: 0.9rem 1.3rem; /* Aumenta um pouco o padding dos alertas */
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem; /* Aumenta um pouco o tamanho da fonte dos alertas */
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.invalid-feedback {
+    font-size: 0.9rem; /* Aumenta um pouco o tamanho da fonte do feedback */
+    color: #dc3545;
+    margin-top: 0.25rem;
+}
+
+.form-group.termos-condicoes {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group.termos-condicoes input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.form-group.termos-condicoes label {
+    font-weight: normal;
+    color: #555;
+    font-size: 0.95rem; /* Aumenta um pouco o tamanho da fonte da label dos termos */
+}
+
+.form-group > .password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group > .password-input input[type="password"] {
+    padding-right: 2.5rem;
+    font-size: 1rem; /* Aumenta um pouco o tamanho da fonte do input de senha */
+}
+
+.form-group > .password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    color: #aaa;
+    font-size: 0.9rem; /* Aumenta um pouco o tamanho da fonte do ícone de senha */
+}
